@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+      <title>Titre</title>
+      <link rel="stylesheet" type="text/css" href="styles/all.css" />
+      <script type="text/javascript"></script>
+   </head>
+
+   <body>
+      <div id="main">
+         <h1>Système de vote électronique</h1>
+         
+         <!-- Colonne de gauche avec les formulaire -->
+         <div class="left">
+            <h2>Bulletin de vote</h2>
+
+            <!-- Espacer le formulaire -->
+            <div style="height:4em;"></div>
+
+
+            <form action="" method="post">
+
+            <!-- Les éléments de saisie -->
+            <table>
+
+               <tr id="saisieNom">
+                  <th>Nom:</th>
+                  <td>
+                     <input type="text" name="nom" id="nom" />
+                  </td>
+               </tr>
+
+               <tr id="saisiePrenom">
+                  <th>Prénom:</th>
+                  <td>
+                     <input type="text" name="prenom" id="prenom" />
+                  </td>
+               </tr>
+
+               <tr id="saisieDate">
+                  <th>Naissance:<br/><span class="small">(JJ/MM/AAAA)</span></th>
+                  <td>
+                     <input type="text" name="jour" id="jour" size="2" maxlength="2" /> /
+                     <input type="text" name="mois" id="mois" size="2" maxlength="2" /> /
+                     <input type="text" name="an"   id="an"   size="4" maxlength="4" />
+                  </td>
+               </tr>
+            </table>
+
+            <input class="button" type="button" value="Batman" />
+            <input class="button" type="button" value="Robin"  />
+            </form>
+         </div>
+
+         <!-- colonne de droite avec les résultats -->
+         <div class="left">
+            <h2>Résultats</h2>
+            
+            <!-- Image du gagnant -->
+            <img id="image" src="images/egalite.jpg" alt="Pas d'image" />
+            
+            <!-- Affichage des détails -->
+            <table>
+               <tr> <th>Pour Batman:</th>    <td id="batman"> 0 (0%)</td> </tr>
+               <tr> <th>Pour Robin:</th>     <td id="robin">  0 (0%)</td> </tr>
+               <tr> <th>Total des voix:</th> <td id="total">  0</td> </tr>
+            </table>
+         </div>
+
+         <!-- Pour fixer la hauteur de la div #main -->
+         <div style="clear:both"></div>
+
+      </div>
+   </body>
+</html>
