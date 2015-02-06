@@ -1,4 +1,10 @@
 p {
-align:left;
-width:250px;
+	align				: left;
+	width				: 250px;
+}
+
+body{
+	margin 				: auto;
+	width  				: 1024px;
+	background-color 	: green;
 }
